@@ -1,0 +1,4 @@
+This is the new version, v1.1, which can solve three problem:
+1. Support all NGC EPG excel: Now it recognizes the formats by the header line. Handling all excel file by the same way, if it contains the same header line.
+2. About Music channel, the 00:00 defecation issue:  A event has 00:00 as start time, it will be replace to 24:00 automatically, if it has a previous event whose start date is in the same day.
+3. Typing error in the source file: this application can not fix it, because there are many different possibles. For now, this application do check the output. If there is event whose end time is earlier than the start time, the output file will generate a new line containing this event with an error tag. The console of application also shows an error message. You can simply fix it in output .txt file by hand, if the errors are not many. If many, please think about the source.
